@@ -4,18 +4,20 @@ public class Person {
     private String phoneNumber;
     private int daysOfWork;
     private int salaryPerDay;
+    private int calculateSalary;
 
-    public Person(int idEmployee, String fullName, String phoneNumber, int daysOfWork, int salaryPerDay) {
+    Person(int idEmployee, String fullName, String phoneNumber, int daysOfWork, int salaryPerDay) {
         this.idEmployee = idEmployee;
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
         this.daysOfWork = daysOfWork;
         this.salaryPerDay = salaryPerDay;
-    }
-    public int calculateSalary(){
-       return daysOfWork*salaryPerDay;
+        this.calculateSalary = CalculateSalary();
     }
 
+    public int CalculateSalary(){
+        return calculateSalary;
+    }
     public int getIdEmployee() {
         return idEmployee;
     }
@@ -32,7 +34,7 @@ public class Person {
         return daysOfWork;
     }
 
-    public double getSalaryPerDay() {
+    public int getSalaryPerDay() {
         return salaryPerDay;
     }
 }
