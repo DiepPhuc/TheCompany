@@ -15,5 +15,6 @@ public class Staff extends Person {
 
     void WhoManage(){
         System.out.println("The Manager is: " + whoManage);
+        System.out.println("Checkout");
     }
 }
