@@ -12,6 +12,7 @@ public class Staff extends Person {
 
     public void CalculateSalary(){
         System.out.println("The salary in this month is: " + calculateSalary());
+        System.out.println("Checkout");
     }
     public void WhoManage(){
         System.out.println("The Manager is: " + whoManage);
